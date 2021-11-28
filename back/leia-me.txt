@@ -1,0 +1,4 @@
+Habilitar o profile de desenvolvimento
+
+-Dspring.profiles.active=dev
+-Dspring.profiles.active=prod

@@ -1,0 +1,68 @@
+.container{
+    position: relative;
+    width:1040px;
+    margin: 0 auto;
+    background-color: floralwhite;
+}
+.container--header{
+    position: relative;
+    display: grid;
+    grid-template-areas:
+      "img--suri--header links--header login--header";
+    margin: 0;
+    padding: 0;
+   
+}
+.img--suri--header{
+    width: 101px;
+}
+
+.title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+.lead{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;    
+}
+.description{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.img--suri{
+    width:245px;
+    height:60px;
+    margin: 0;
+    padding: 0;
+    
+}
+.links--header{
+    display: inline-block;
+    margin: 0; 
+}
+.links--header li{
+    display: inline-block;
+    margin: 0 0 0 7px; 
+}
+
+.login{
+    width:26px;
+    height:21px;
+    margin: 0;
+    padding: 0;
+    margin-top: 16px;
+    margin-left: 30px;
+
+}
+
+.links--header a{
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 16px;
+    text-decoration: none;
+    margin: auto; 
+    
+}
+
+.login--header i{
+    font-size: 16px;
+}
