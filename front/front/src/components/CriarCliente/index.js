@@ -5,6 +5,7 @@ import Header from '../Header';
 import './index.css';
 import InputMask from "react-input-mask";
 import { useNavigate } from "react-router-dom";
+
 function Retiracpf(cpf_old){
     var cpf = cpf_old.replaceAll("-","");
     var cpf = cpf.replaceAll(".","");

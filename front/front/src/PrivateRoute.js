@@ -1,14 +1,17 @@
 import React from 'react';
-import { Navigate, Route } from 'react-router-dom';
+import { Navigate, Route,useLocation,Outlet } from 'react-router-dom';
 
 const PrivateRoutes = (component) => {
-    var session_token=localStorage.getItem("token");
+    var session_token=localStorage.getItem("email");
+
+    let location = useLocation();
     var isAuthenticated = false;
-    if (session_token!==null){
+    if (session_token=="admin@email.com"){
         isAuthenticated=true;
+        return <Outlet />;
     }
     return (
-         isAuthenticated ? component : <Navigate to="/" />
+         <Navigate to="/" state={{ from: location }} />
     )
 }
 

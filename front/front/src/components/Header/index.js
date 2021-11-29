@@ -29,9 +29,6 @@ function Header(handleListPessoa){
                 <div className="login--header">
                     <a href="/"><img className="login" src={login_img}></img></a>
                 </div>
-                {/*<Link className="btn btn-primary btn-lg" to="/home">
-                    Acessar Dashboard
-                </Link>*/}
             </div>
         </div>
     );
