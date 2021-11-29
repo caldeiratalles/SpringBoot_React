@@ -94,21 +94,21 @@ function CriarCliente(){
                 </button>
                 <form onSubmit={handleSubmit}>
                     <div className="container--labels">
-                        <label for="lname">CEP:</label><br/>
-                        <label for="fname">Primeiro nome:</label><br/>
-                        <label for="lname">Segundo nome:</label><br/>
-                        <label for="lname">CPF:</label><br/>
+                        <label className="labels" for="lname">CEP:</label>                    
+                        <label className="labels" for="lname">Primeiro nome:</label>
+                        <label className="labels" for="lname">Segundo nome:</label>
+                        <label className="labels" for="lname">CPF:</label>
                         
-                        <label for="lname">Logradouro:</label><br/>
-                        <label for="lname">Bairro:</label><br/>
-                        <label for="lname">Cidade:</label><br/>
-                        <label for="lname">UF:</label><br/>
-                        <label for="lname">Complemento:</label><br/>
-                        <label for="lname">Residencial:</label><br/>
-                        <label for="lname">Comercial:</label><br/>
-                        <label for="lname">Celular:</label><br/>
-                        <label for="lname">Email principal:</label><br/>
-                        <label for="lname">Email secundario:</label><br/>
+                        <label className="labels" for="lname">Logradouro:</label>
+                        <label className="labels" for="lname">Bairro:</label>
+                        <label className="labels" for="lname">Cidade:</label>
+                        <label className="labels" for="lname">UF:</label>
+                        <label className="labels" for="lname">Complemento:</label>
+                        <label className="labels" for="lname">Residencial:</label>
+                        <label className="labels" for="lname">Comercial:</label>
+                        <label className="labels" for="lname">Celular:</label>
+                        <label className="labels" for="lname">Email principal:</label>
+                        <label className="labels" for="lname">Email secundario:</label>
                     </div>
 
                     <div className="container--inputs">

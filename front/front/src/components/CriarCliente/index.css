@@ -21,11 +21,16 @@ form{
     padding: 0;
 }
 .container--labels{
+    margin-top: 15px;
     flex: 50%;
+    width: 378px;
+    height: 378px;
+    display: grid;
 }
 .container--inputs{
     margin-top: 15px;
     flex: 50%;
+    display: grid;
 }
 
 
