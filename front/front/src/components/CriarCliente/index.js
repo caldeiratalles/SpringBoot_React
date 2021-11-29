@@ -89,16 +89,13 @@ function CriarCliente(){
             
 
             <div className="container--cliente">
-                <button className="btns btn-primary btn-lg" onClick={handleListEndereco}>
-                        Pesquisar CEP
-                </button>
+
                 <form onSubmit={handleSubmit}>
                     <div className="container--labels">
                         <label className="labels" for="lname">CEP:</label>                    
                         <label className="labels" for="lname">Primeiro nome:</label>
                         <label className="labels" for="lname">Segundo nome:</label>
                         <label className="labels" for="lname">CPF:</label>
-                        
                         <label className="labels" for="lname">Logradouro:</label>
                         <label className="labels" for="lname">Bairro:</label>
                         <label className="labels" for="lname">Cidade:</label>
@@ -109,6 +106,9 @@ function CriarCliente(){
                         <label className="labels" for="lname">Celular:</label>
                         <label className="labels" for="lname">Email principal:</label>
                         <label className="labels" for="lname">Email secundario:</label>
+                        <button className="btn btn-primary btn-lg" onClick={handleListEndereco}>
+                        Pesquisar CEP
+                        </button>
                     </div>
 
                     <div className="container--inputs">
@@ -126,10 +126,11 @@ function CriarCliente(){
                         <InputMask type="text" id="Celular" name="Celular" mask="9-9999-9999" value={pessoa.telefone.celular} placeholder="" onChange={e => setPessoa({ ...pessoa, telefone:{...pessoa.telefone, celular:e.target.value.replaceAll("-","")} })}required="required"/>
                         <input type="email" id="Email principal" name="Email principal"  value1={pessoa.email.email1}  placeholder="" onChange={e => setPessoa({ ...pessoa, email:{... pessoa.email,email1:e.target.value} })}required="required" multiple/>
                         <input type="email" id="Email secundario" name="Email secundario" value={pessoa.email.email2} placeholder="" onChange={e => setPessoa({ ...pessoa, email:{... pessoa.email,email2:e.target.value} })} multiple/>
-                    </div>
                         <button className="btn btn-primary btn-lg ">
                         Enviar Dados
-                    </button>
+                        </button>
+                    </div>
+
                 </form> 
 
             </div>

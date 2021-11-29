@@ -23,8 +23,8 @@ form{
 .container--labels{
     margin-top: 15px;
     flex: 50%;
-    width: 378px;
-    height: 378px;
+    width: 320px;
+    height: 405px;
     display: grid;
 }
 .container--inputs{
@@ -32,5 +32,16 @@ form{
     flex: 50%;
     display: grid;
 }
+.container--labels button{
+    width: 320px;
+    height: 27px;  
+    
+}
+.container--labels label{
+    width: 320px;
+    height: 27px;  
+    
+}
+
 
 

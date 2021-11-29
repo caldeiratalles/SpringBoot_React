@@ -104,15 +104,14 @@ function Editar(){
                 
     
                 <div className="container--cliente">
-                    <button className="btns btn-primary btn-lg" onClick={handleListEndereco}>
-                            Pesquisar CEP
-                    </button>
+
                     <form onSubmit={handleSubmit}>
                         <div className="container--labels">
                             <label for="lname">CEP:</label>
                             <label for="fname">Primeiro nome:</label>
                             <label for="lname">Segundo nome:</label>
-                            <label for="lname">CPF:</label>                        <label for="lname">Logradouro:</label>
+                            <label for="lname">CPF:</label>                        
+                            <label for="lname">Logradouro:</label>
                             <label for="lname">Bairro:</label>
                             <label for="lname">Cidade:</label>
                             <label for="lname">UF:</label>
@@ -122,6 +121,9 @@ function Editar(){
                             <label for="lname">Celular:</label>
                             <label for="lname">Email principal:</label>
                             <label for="lname">Email secundario:</label>
+                            <button className="btn btn-primary btn-lg" onClick={handleListEndereco}>
+                            Pesquisar CEP
+                            </button>
                         </div>
     
                         <div className="container--inputs">
@@ -139,10 +141,11 @@ function Editar(){
                             <InputMask type="text" id="Celular" name="Celular" mask="9-9999-9999" value={pessoa.telefone?.celular} placeholder={pessoa.telefone?.celular} onChange={e => setPessoa({ ...pessoa, telefone:{...pessoa.telefone, celular:e.target.value.replaceAll("-","")} })}required="required"/>
                             <input type="email" id="Email principal" name="Email principal" value1={pessoa.email?.email1}  placeholder={pessoa.email?.email1} onChange={e => setPessoa({ ...pessoa, email:{...pessoa.email, email1:e.target.value} })}required="required" multiple/>
                             <input type="email" id="Email secundario" name="Email secundario" value={pessoa.email?.email2} placeholder={pessoa.email?.email2} onChange={e => setPessoa({ ...pessoa, email:{...pessoa.email, email2:e.target.value} })} multiple/>
+                            <button className="btn btn-primary btn-lg ">
+                            Atualizar Dados
+                            </button>                       
                         </div>
-                        <button className="btn btn-primary btn-lg ">
-                            Enviar Dados
-                        </button>
+
                     </form> 
     
                 </div>
